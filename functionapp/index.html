@@ -4,19 +4,23 @@
         <title>Function App</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
     </head>
     <body>
-        <div>
+        <div class="panel panel-default">
+          <div class="panel-body">
             <div style="text-align:center;">
                 <input type="text" placeholder="Please select a file" id="actual-file" disabled="disabled"/>
-                <input type="button" value="Choose a file" id="selectFile"/>
+                <input type="button" value="Choose a file" id="selectFile" class="btn-primary"/>
             </div>
             <br><br>
-            <textarea id="show-content" onclick="this.contentEditable='true';">
+            <div id="show-functions" style="float:left; margin-left: 10px">
+            </div>
+            <div id="show-content" style="float:left; margin-left: 40px" contenteditable="true">
 
-            </textarea>
+            </div>
+          </div>
         </div>
-
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
