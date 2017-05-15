@@ -1,0 +1,15 @@
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+#show-functions{
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+#show-content{
+  min-height: 100vh;
+  background-color: grey;
+  color: white;
+}

@@ -4,23 +4,21 @@
         <title>Function App</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
-        <div class="panel panel-default">
-          <div class="panel-body">
             <div style="text-align:center;">
                 <input type="text" placeholder="Please select a file" id="actual-file" disabled="disabled"/>
-                <input type="button" value="Choose a file" id="selectFile" class="btn-primary"/>
+                <button class="btn waves-effect waves-light" type="button" id="selectFile" name="action">Choose a file</button>
             </div>
-            <br><br>
-            <div id="show-functions" style="float:left; margin-left: 10px">
+            <div class="row">
+              <div id="show-functions" class="col s2">
+              </div>
+              <div id="show-content" contenteditable="true" class="col s10">
+              </div>
             </div>
-            <div id="show-content" style="float:left; margin-left: 40px" contenteditable="true">
 
-            </div>
-          </div>
-        </div>
         <script src="js/main.js" charset="utf-8"></script>
     </body>
 </html>
